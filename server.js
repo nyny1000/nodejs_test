@@ -62,6 +62,7 @@ http.createServer(function (request, response) {
 
 
 
+    //실습
     if (request.method == 'GET') {
         fs.readFile('./html/login.html', function (error, data) {
             response.writeHead(200, { 'Content-Type': 'text/html' });
